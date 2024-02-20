@@ -1,9 +1,10 @@
 import { createRoot } from 'react-dom/client';
 import './global.css';
-import App from './App';
+import City from './components/City';
+import cities from './cz-cities'
 
 
 
 createRoot(
   document.querySelector('#app'),
-).render(<App />);
+).render(<City cities={cities} />);
